@@ -14,7 +14,7 @@ Identificar el porcentaje de inactividad de los clientes (Churn) en una platafor
 
 ## 💻 Script de Base de Datos y Consultas
 
-### 1. Creación de la Estructura de Datos
+###  Creación de la Estructura de Datos y consulta de clasificación de clientes y churn
 ```sql
 CREATE DATABASE IF NOT EXISTS club_clientes;
 USE club_clientes;
