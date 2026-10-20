@@ -28,3 +28,12 @@ CREATE TABLE IF NOT EXISTS clientes (
     fecha_ultima_compra DATE,
     metodo_pago VARCHAR(20)
 );
+
+
+SELECT 
+    IF(DATEDIFF('2026-10-15', fecha_ultima_compra) > 90, 'Inactivo (Churn)', 'Activo') AS estado_cliente,
+    COUNT(id_cliente) AS total_clientes,
+    SUM(monto_mensual) AS ingreso_mensual_total,
+    ROUND(AVG(monto_mensual), 2) AS ticket_promedio
+FROM clientes
+GROUP BY estado_cliente;
