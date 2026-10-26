@@ -47,7 +47,8 @@ Se conectó la base de datos MySQL `club_clientes` directamente a Power BI Deskt
 - **Ingreso Total:** `SUM(clientes[monto_mensual])`
 - **Clientes Churn:** Cálculo dinámico de clientes inactivos con más de 90 días usando `CALCULATE` y `DATEDIFF`.
 
-![Dashboard Power BI](nombre_de_tu_imagen.png)
+![Dashboard Power BI] (<img width="1917" height="987" alt="image" src="https://github.com/user-attachments/assets/807cdec0-a6b1-4347-9f4f-6c4a8d7391e2" />
+)
 
-<img width="1917" height="987" alt="image" src="https://github.com/user-attachments/assets/0187965c-9520-4309-9dbe-4a8bdce13421" />
+
 
