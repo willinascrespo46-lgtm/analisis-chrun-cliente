@@ -39,16 +39,10 @@ FROM clientes
 GROUP BY estado_cliente;
 
 
-## 📊 Visualización Interactiva en Power BI
+## 📊 Dashboard de Ventas y Churn en Power BI
 
-Se conectó la base de datos MySQL `club_clientes` directamente a Power BI Desktop para construir un dashboard ejecutivo.
+Se conectó la base de datos MySQL `club_clientes` directamente a Power BI Desktop para modelar métricas con DAX y construir un tablero interactivo.
 
-### Métricas y DAX implementados:
-- **Ingreso Total:** `SUM(clientes[monto_mensual])`
-- **Clientes Churn:** Cálculo dinámico de clientes inactivos con más de 90 días usando `CALCULATE` y `DATEDIFF`.
-
-![Dashboard Power BI] (<img width="1917" height="987" alt="image" src="https://github.com/user-attachments/assets/807cdec0-a6b1-4347-9f4f-6c4a8d7391e2" />
-)
-
+![Dashboard Power BI](captura_pBI.png)
 
 
