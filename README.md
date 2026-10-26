@@ -37,3 +37,17 @@ SELECT
     ROUND(AVG(monto_mensual), 2) AS ticket_promedio
 FROM clientes
 GROUP BY estado_cliente;
+
+
+## 📊 Visualización Interactiva en Power BI
+
+Se conectó la base de datos MySQL `club_clientes` directamente a Power BI Desktop para construir un dashboard ejecutivo.
+
+### Métricas y DAX implementados:
+- **Ingreso Total:** `SUM(clientes[monto_mensual])`
+- **Clientes Churn:** Cálculo dinámico de clientes inactivos con más de 90 días usando `CALCULATE` y `DATEDIFF`.
+
+![Dashboard Power BI](nombre_de_tu_imagen.png)
+
+<img width="1917" height="987" alt="image" src="https://github.com/user-attachments/assets/0187965c-9520-4309-9dbe-4a8bdce13421" />
+
